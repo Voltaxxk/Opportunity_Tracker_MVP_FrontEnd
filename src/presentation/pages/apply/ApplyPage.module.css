@@ -1,0 +1,28 @@
+@reference "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+
+.apply-page {
+  @apply flex flex-col items-center min-h-[80vh] w-full pt-8;
+}
+
+.apply-page__container {
+  @apply w-full max-w-xl flex flex-col items-center;
+}
+
+.apply-page__back-btn {
+  @apply flex items-center gap-2 mb-4 self-start text-gray-200 hover:text-blue-400 transition cursor-pointer;
+}
+
+.apply-page__title {
+  @apply text-2xl font-bold text-center text-gray-50 mb-2;
+}
+
+.apply-page__subtitle {
+  @apply text-center text-gray-300 mb-2;
+}
+
+.apply-page__deadline {
+  @apply text-center text-xs text-blue-300 mb-4;
+}

@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+.opportunities-page {
+  @apply flex flex-col items-center w-full min-h-screen;
+}
+
+.opportunities-page__container {
+  @apply p-4 sm:p-6 md:p-8 max-w-6xl mx-auto w-full;
+}
+
+.opportunities-page__title {
+  @apply text-4xl font-extrabold mb-8 text-center text-gray-50;
+}
+
+.opportunities-page__pagination {
+  @apply mt-8 flex justify-center gap-4;
+}
+
+.opportunities-page__pagination-btn {
+  @apply px-4 py-2 rounded font-medium;
+}
+.opportunities-page__pagination-btn--prev {
+  @apply bg-gray-700 text-gray-100 disabled:opacity-50;
+}
+.opportunities-page__pagination-btn--next {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}

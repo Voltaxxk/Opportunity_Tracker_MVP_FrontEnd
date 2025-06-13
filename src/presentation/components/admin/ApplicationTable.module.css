@@ -1,0 +1,57 @@
+
+@reference "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+
+.applications-table {
+  @apply min-w-full border-collapse font-normal text-sm bg-gray-900 text-gray-50;
+}
+
+
+.applications-table__scroll {
+  @apply overflow-x-auto;
+}
+
+
+.applications-table__header-row {
+  @apply bg-gray-800;
+}
+.applications-table__header-row th {
+  @apply text-gray-50 border-gray-700;
+}
+
+
+.applications-table__cell {
+  @apply p-2 border align-middle text-gray-50 border-gray-700;
+}
+
+.applications-table__cell--truncate {
+  @apply max-w-xs whitespace-nowrap overflow-hidden text-ellipsis;
+}
+
+
+.applications-table__row:nth-child(even) {
+  @apply bg-gray-800;
+}
+
+.applications-table__legend {
+  @apply flex gap-5 mb-2 flex-wrap text-xs text-gray-50;
+}
+.applications-table__legend-item {
+  @apply inline-flex items-center gap-1;
+}
+
+.applications-table__utm-badge {
+  @apply inline-block px-2 py-0.5 rounded-full border font-semibold text-xs mr-1;
+  @apply border-2;
+}
+.applications-table__utm-badge--source {
+  @apply bg-blue-600 text-white border-blue-800;
+}
+.applications-table__utm-badge--medium {
+  @apply bg-green-500 text-white border-green-700;
+}
+.applications-table__utm-badge--campaign {
+  @apply bg-violet-700 text-white border-violet-900;
+}

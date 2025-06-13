@@ -1,0 +1,9 @@
+
+@reference "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+
+.admin-title {
+  @apply text-4xl font-extrabold mb-8 text-center;
+}
