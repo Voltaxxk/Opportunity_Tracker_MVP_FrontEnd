@@ -14,7 +14,13 @@ Currently, two official plugins are available:
 npm install
 ```
 
-4.Probar el proyecto 😁
+4. Ejecutar
+
+```
+npm run dev
+```
+
+5. Probar el proyecto 😁
 
 # Admin Page
 
